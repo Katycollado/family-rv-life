@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Family RV Life - About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Family RV Life</a>
+            </div>
+
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Family RV Life</h1>
+            <p>Travel, nature, and quality time together.</p>
+            <button class="btn btn-primary" onclick="showTip()">Click for a Tip</button>
+            <p id="tip-message"></p>
+        </div>
+    </header>
+
+    <main class="container page-space">
+        <h1>About Our RV Life</h1>
+
+        <div id="about-box">
+            <p>
+                RV life helps our family slow down, connect, and enjoy simple moments together.
+            </p>
+            <p>
+                Traveling in a motorhome gives us the chance to cook, rest, explore, and spend quality time as a family.
+            </p>
+
+            <p>
+                It also allows us to enjoy nature, peaceful places, and fun memories with our family and dog.
+            </p>
+        </div>
+
+        <button class="btn btn-info" onclick="showMessage()">Why RV Life?</button>
+        <p id="about-message" class="message-space"></p>
+
+        <h2>Benefits of Family RV Life</h2>
+        <ul>
+            <li>More family time</li>
+            <li>Less screen distraction</li>
+            <li>Enjoying nature</li>
+            <li>Learning through travel</li>
+            <li>Relaxing and exploring together</li>
+        </ul>
+
+        <h3>Our motorhome</h3>
+
+        <div class="photo-gallery">
+            <img src="images/rv2.jpg" alt="RV" onclick="openImage(this)">
+            <img src="images/rv-park.jpg" alt="RV park" onclick="openImage(this)">
+            <img src="images/rv-inside2.jpg" alt="Inside of motorhome" onclick="openImage(this)">
+            <img src="images/rv-inside.jpg" alt="Inside of motorhome" onclick="openImage(this)">
+            <img src="images/rv-inside3.jpg" alt="Inside of motorhome" onclick="openImage(this)">
+            <img src="images/rv-inside4.jpg" alt="Inside of motorhome" onclick="openImage(this)">
+        </div>
+
+        <p class="gallery-caption">
+            Inside our motorhome, we can rest and enjoy time together as a family.
+        </p>
+
+        <h3>Our dog</h3>
+
+
+        <div class="photo-gallery">
+            <img src="images/dog.jpg" alt="Family dog during RV trip" onclick="openImage(this)">
+            <img src="images/walking-dog.jpg" alt="Walking our dog during RV trip" onclick="openImage(this)">
+        </div>
+        <p class="gallery-caption">
+            Our dog is an important part of our family and joins us on our RV adventures.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Family RV Life</p>
+
+    </footer>
+
+    <div id="popup" onclick="closeImage()">
+        <img id="popup-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
