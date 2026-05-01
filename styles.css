@@ -87,13 +87,18 @@ body {
 #about-box {
     background-color: white;
     padding: 20px;
-    border-left: 5px solid #2c5f7c;
+    border-left: 5px solid #150e7c;
     margin-bottom: 25px;
 }
 
 .about-photo img {
     height: auto;
     width: 100%;
+}
+
+.btn {
+    border-radius: 20px;
+    padding: 8px 18px;
 }
 
 .tip-card {
@@ -124,16 +129,17 @@ body {
     margin-bottom: 20px;
     text-align: center;
     overflow: hidden;
-    height: 330px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 380px;
 
+}
+
+.gallery-item p {
+    margin-top: 10px;
 }
 
 .gallery-item img {
     width: 100%;
-    height: 260px;
+    height: 240px;
     object-fit: cover;
     filter: brightness(95%);
     transition: transform 0.4s, filter 0.4s;
@@ -163,9 +169,10 @@ body {
 
 .photo-gallery img {
     width: 100%;
-    height: 240px;
+    height: auto;
+    max-height: 240px;
     object-fit: contain;
-    background-color: #f2f2f2;
+    background-color: #f8f9fa;
     border-radius: 10px;
     padding: 5px;
     transition: transform 0.3s, filter 0.3s;
@@ -175,6 +182,7 @@ body {
     transform: scale(1.03);
     filter: brightness(110%);
 }
+
 
 @media all and (max-width: 767px) {
     .photo-gallery {
@@ -275,6 +283,14 @@ footer {
 @media all and (min-width: 768px) and (max-width: 991px) {
     .hero-text h1 {
         font-size: 36px;
+    }
+
+}
+
+@media all and (max-width: 991px) {
+    .gallery-item img {
+        height: auto;
+        object-fit: contain;
     }
 
 }
